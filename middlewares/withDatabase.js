@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 dotenv.config()
 
 const { RED_BUCAL_MONGODB_HOTS, RED_BUCAL_MONGODB_DATABASE } = process.env
-//const MONGODB_URI = `mongodb://${RED_BUCAL_MONGODB_HOTS}/${RED_BUCAL_MONGODB_DATABASE}`
-const MONGODB_URI = `mongodb://localhost/red-bucal-database`
+const MONGODB_URI = `mongodb://${RED_BUCAL_MONGODB_HOTS}/${RED_BUCAL_MONGODB_DATABASE}`
+//const MONGODB_URI = `mongodb://localhost/red-bucal-database`
 
 const client = new MongoClient(MONGODB_URI, {
     useUnifiedTopology: true,
